@@ -1,2 +1,2 @@
 Travis status:
-https://travis-ci.org/KoncepcyjnyMiliarder/trying-out-travis.svg?branch=master
+[![Build Status](https://travis-ci.org/KoncepcyjnyMiliarder/trying-out-travis.svg?branch=master)](https://travis-ci.org/KoncepcyjnyMiliarder/trying-out-travis)
