@@ -2,7 +2,6 @@ language: cpp
 
 jobs:
   include:
-    - stage: building and testing
       - script:
         - mkdir build_clang
         - cd build_clang
