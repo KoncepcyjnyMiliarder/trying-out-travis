@@ -3,13 +3,13 @@ language: cpp
 jobs:
   include:
     - stage: building and testing
-      script:
+      - script:
         - mkdir build_clang
         - cd build_clang
         - cmake -D CMAKE_C_COMPILER=clang -D CMAKE_CXX_COMPILER=clang++ ..
         - cmake --build .
         - ./tryingout_ut
-      script:
+      - script:
         - mkdir build_gcc
         - cd build_gcc
         - cmake -D CMAKE_C_COMPILER=gcc -D CMAKE_CXX_COMPILER=g++ ..
