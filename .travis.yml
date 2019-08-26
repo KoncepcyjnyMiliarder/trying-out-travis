@@ -1,17 +1,15 @@
 language: cpp
 
+compiler:
+  - clang
+  - gcc
+
 jobs:
   include:
     - stage: building and testing
       script:
-        - mkdir build_gcc
-        - cd build_gcc
-        - cmake -D CMAKE_C_COMPILER=/usr/bin/g -D CMAKE_CXX_COMPILER=/usr/bin/g++ ..
-        - cmake --build ..
-        - ./tryingout_ut
-      script:
-        - mkdir build_clang
-        - cd build_clang
-        - cmake -D CMAKE_C_COMPILER=/usr/bin/clang -D CMAKE_CXX_COMPILER=/usr/bin/clang++ ..
+        - mkdir build
+        - cd build
+        - cmake ..
         - cmake --build ..
         - ./tryingout_ut
