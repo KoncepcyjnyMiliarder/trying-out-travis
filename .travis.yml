@@ -1,13 +1,6 @@
 language: cpp
 
-jobs:
-  include:
-    - stage: cmake configuration
-      script:
-        - cmake .
-    - stage: build
-      script:
-        - cmake --build .
-    - stage: running tests
-      script:
-        - ./tryingout_ut
+script:
+  - cmake .
+  - cmake --build .
+  - ./tryingout_ut
